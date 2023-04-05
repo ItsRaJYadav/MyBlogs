@@ -5,7 +5,7 @@ import { GetStaticProps } from 'next'
 import { sanityClient, urlFor } from '../../sanity'
 import PortableText from 'react-portable-text'
 import { useForm, SubmitHandler } from "react-hook-form";
-import comment from '../../scribblespot/schemas/comment'
+// import comment from '../../scribblespot/schemas/comment'
 import { useSession } from 'next-auth/react'
 import Image from 'next/image';
 
