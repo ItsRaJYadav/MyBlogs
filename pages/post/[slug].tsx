@@ -90,13 +90,7 @@ const Post = ({ post }: Props) => {
           style={{ backgroundPosition: 'top center' }}
         />
 
-        {/* <Image
-        className='w-full h-96 object-cover'
-        src={urlFor(post.mainImage).url()!}
-        alt="imageofmain"
-        width={1080}
-        height={1920}
-      /> */}
+       
 
         {/* main body */}
         <div className='max-w-6xl mx-auto'>
@@ -123,8 +117,8 @@ const Post = ({ post }: Props) => {
 
           <div className='mt-10'>
             <PortableText
-              dataset={process.env.NEXT_PUBLIC_SANITY_DATASET || "production"}
-              projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "6st1ov0q"}
+              dataset={process.env.NEXT_PUBLIC_SANITY_DATASET }
+              projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID }
               content={post.body}
               serializers={{
                 h1: (props: any) => {
