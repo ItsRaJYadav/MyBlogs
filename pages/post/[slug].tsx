@@ -36,6 +36,7 @@ type Inputs = {
   comment: string;
 }
 
+
 const Post = ({ post }: Props) => {
   const { data: session } = useSession();
 
