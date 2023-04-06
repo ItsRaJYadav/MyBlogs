@@ -25,7 +25,7 @@ interface Post {
   slug: {
     current: string;
   };
-  body: string;
+  body: any;
 }
 
 type Inputs = {
@@ -116,6 +116,7 @@ const Post = ({ post }: Props) => {
 
 
           <div className='mt-10'>
+            
             <PortableText
               dataset={process.env.NEXT_PUBLIC_SANITY_DATASET }
               projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID }
