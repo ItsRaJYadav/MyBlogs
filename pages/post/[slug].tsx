@@ -82,7 +82,7 @@ const Post = ({ post }: Props) => {
 
       {/* banner image */}
       <div className='mt-30'>
-        
+
         <img
           className='w-full h-96 object-cover object-top'
           src={urlFor(post.mainImage).url()!}
@@ -90,7 +90,7 @@ const Post = ({ post }: Props) => {
           style={{ backgroundPosition: 'top center' }}
         />
 
-       
+
 
         {/* main body */}
         <div className='max-w-6xl mx-auto'>
@@ -116,10 +116,10 @@ const Post = ({ post }: Props) => {
 
 
           <div className='mt-10'>
-            
+
             <PortableText
-              dataset={process.env.NEXT_PUBLIC_SANITY_DATASET }
-              projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID }
+              dataset={process.env.NEXT_PUBLIC_SANITY_DATASET}
+              projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}
               content={post.body}
               serializers={{
                 h1: (props: any) => {
@@ -154,11 +154,12 @@ const Post = ({ post }: Props) => {
             <p className="text-green-700">Once your comment is approved by an admin, it will show up here.</p>
           </div>
             : <div>
-              <h1 className='text-secondaryColor text-xs font-titleFont font-bold ' >Have you enjoyed? </h1>
-              <h3 className='text-titleFont text-3xl font-bold ' >Leave a comments</h3>
-              <hr className='py-3 mt-3' />
+
               {/* form */}
               <div className="max-w-lg mx-auto">
+                <h1 className='text-secondaryColor text-l font-titleFont font-bold text-center ' >Have you enjoyed? </h1>
+                <h3 className='text-titleFont text-3xl font-bold text-center ' >Leave a Comments :</h3>
+                <hr className='py-3 mt-3' />
                 <input {...register("_id")}
                   type='hidden'
                   name='id'
