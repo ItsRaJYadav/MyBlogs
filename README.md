@@ -3,7 +3,16 @@
 
 This is a blog website built with Next.js, TypeScript, React, and Sanity.io. It features user authentication, the ability to read and comment on blog posts, and a clean, modern design.
 
+## Getting Started : Installation  
 
+To run this project locally, follow these steps:
+```bash
+1. Clone the repository: `git clone https://github.com/ItsRaJYadav/MyBlogs.git`
+2. Install dependencies: `npm install` or `yarn install`
+3. Run the development server: `npm run dev` or `yarn run dev`
+4. Open the project in your browser at `http://localhost:3000`   
+```   
+## Screenshots
 
 ## Environment Variables
 
@@ -46,18 +55,8 @@ To run this project, you will need to add the following environment variables to
 
 
 
-## Getting Started : Installation  
 
-To run this project locally, follow these steps:
-```bash
-1. Clone the repository: `git clone https://github.com/ItsRaJYadav/MyBlogs.git`
-2. Install dependencies: `npm install` or `yarn install`
-3. Run the development server: `npm run dev` or `yarn run dev`
-4. Open the project in your browser at `http://localhost:3000`   
-```   
-## Screenshots
 
-![App Screenshot](https://drive.google.com/file/d/1EuIitL0Fitz6Rc0rEGv4q_h2ea9W1NEb/view?usp=sharing)
 
 
 ## Tech Stack
