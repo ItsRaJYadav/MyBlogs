@@ -31,19 +31,23 @@ export const authOptions = {
       //   clientSecret: process.env.DISCORD_CLIENT_SECRET
       // }),
 
-      // FacebookProvider({
-      //   clientId: process.env.FACEBOOK_CLIENT_ID,
-      //   clientSecret: process.env.FACEBOOK_CLIENT_SECRET
-      // }),
+      FacebookProvider({
+        clientId: process.env.FACEBOOK_CLIENT_ID,
+        clientSecret: process.env.FACEBOOK_CLIENT_SECRET
+      }),
       Auth0Provider({
         clientId: process.env.AUTH0_CLIENT_ID,
         clientSecret: process.env.AUTH0_CLIENT_SECRET,
         issuer: process.env.AUTH0_ISSUER
-      })
+      }),
 
+      
+      
+      
 
     // ...add more providers here
   ],
+  secret : process.env.SECRET,
 }
 
 export default NextAuth(authOptions)
