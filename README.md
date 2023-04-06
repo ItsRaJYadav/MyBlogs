@@ -1,27 +1,73 @@
-# Next.js + Tailwind CSS Example
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.2)](https://tailwindcss.com/blog/tailwindcss-v3-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+# ScribbleSpot: A Blog App
 
-## Deploy your own
+This is a blog website built with Next.js, TypeScript, React, and Sanity.io. It features user authentication, the ability to read and comment on blog posts, and a clean, modern design.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
 
-## How to use
+## Environment Variables
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+To run this project, you will need to add the following environment variables to your .env file
+     
+     For Backend
 
+`NEXT_PUBLIC_SANITY_PROJECT_ID=`
+
+`NEXT_PUBLIC_SANITY_DATASET=`
+
+`NEXT_PUBLIC_SANITY_API_VERSION=`
+
+`SANITY_API_TOKEN=`
+
+
+      For Next AUTH0
+
+`GOOGLE_CLIENT_ID=`
+
+`GOOGLE_CLIENT_SECRET`
+
+`GITHUB_ID=`
+
+`GITHUB_SECRET=`
+
+`LINKEDIN_CLIENT_ID=`
+
+`LINKEDIN_CLIENT_SECRET=`
+
+`FACEBOOK_CLIENT_ID=`
+
+`FACEBOOK_CLIENT_SECRET=`
+
+`AUTH0_CLIENT_SECRET=`
+
+`AUTH0_ISSUER=`
+
+`AUTH0_CLIENT_ID=`
+
+
+
+## Getting Started : Installation  
+
+To run this project locally, follow these steps:
 ```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
+1. Clone the repository: `git clone https://github.com/ItsRaJYadav/MyBlogs.git`
+2. Install dependencies: `npm install` or `yarn install`
+3. Run the development server: `npm run dev` or `yarn run dev`
+4. Open the project in your browser at `http://localhost:3000`   
+```   
+## Screenshots
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+![App Screenshot](https://drive.google.com/file/d/1EuIitL0Fitz6Rc0rEGv4q_h2ea9W1NEb/view?usp=sharing)
 
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## Tech Stack
+
+**Client:** React, Next Js Typescript, TailwindCSS
+
+**Server:** Sanity io, Auth 2.0
+
+
+## Authors
+
+- [@King](https://www.github.com/itsrajyadav)
+
